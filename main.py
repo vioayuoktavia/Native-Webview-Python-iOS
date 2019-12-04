@@ -36,7 +36,7 @@ class WK(Widget) :
         _webView = WebView.alloc().initWithFrame_(frame) 
         _webView.loadRequest_(request)
         self.view.addSubview_(_webView)
-        print('Sudah')
+        
 
 class serviceApp(App):
 	def build(self) :
