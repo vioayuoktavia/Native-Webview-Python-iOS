@@ -31,7 +31,7 @@ class WK(Widget) :
         config = WebViewConfig.alloc().init()
         frame = NSRect(NSPoint(0,0),NSSize(Window.size[0]/2.,Window.size[1]/2.))
         webView = WebView.alloc().initWithFrame_configuration_(frame, config)
-        url = NSURL.URLWithString_(objc_str("http://intra-dot-research-repo-1.appspot.com/development"))
+        url = NSURL.URLWithString_(objc_str("https://google.com"))
         request = NSURLRequest.requestWithURL_(url)
         _webView = WebView.alloc().initWithFrame_(frame) 
         _webView.loadRequest_(request)
